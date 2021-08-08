@@ -1,0 +1,57 @@
+.nav{
+    background-color: rgb(250, 250, 250);
+     text color: rgb(255, 255, 255);
+}
+.buy{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .wish{
+    background-color: #79c27b; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+  }
+  .game{
+    background-color: black;
+    color: cornsilk;
+    font-family: 'Courier New', Courier, monospace;
+}
+.end{
+  background-color: black;
+  color: cornsilk;
+  font-family: 'Courier New', Courier, monospace;}
+.ser{
+    float: left;
+    padding: 12px 20px;
+}
+.aa{
+  table-layout: auto;
+  position: relative;
+  left: 685px;
+
+  width: 50%;
+  padding: 5px;
+  width: 40px;
+}
+.move{
+
+  background-color: 	 black; /* gray */
+  border: 3px solid white;
+  color: white;
+  padding: 7px 21px;
+  text-align: center;
+  text-decoration: seashell;
+  display: inline-block;
+  font-size: 30px;
+}

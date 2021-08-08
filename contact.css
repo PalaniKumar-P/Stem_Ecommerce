@@ -1,0 +1,26 @@
+.con{
+    background-image: url("cona.png");
+}
+.wish{
+    background-color: #79c27b; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+  }
+  .end{
+    background-color: black;
+    color: cornsilk;
+    font-family: 'Courier New', Courier, monospace;}
+    .aa{
+      table-layout: auto;
+      position: relative;
+      left: 685px;
+  
+      width: 50%;
+      padding: 5px;
+      width: 40px;
+    }

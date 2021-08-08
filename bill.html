@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="index.css">
+	<title>Stem | BILLING</title>
+	<style>
+	.back{
+		background-color: #79c27b; /* Green */
+		border: none;
+		color: white;
+		padding: 12px 25px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 15px;
+	}
+	.pays{
+		background-color: #79c27b; /* Green */
+		border: none;
+		color: white;
+		padding: 15px 23px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 15px;
+	}
+	.bil{
+		font-size: large;
+	}
+</style>
+</head>
+
+<body bgcolor="#D4E6F1" width="100%" topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0">
+<font face="Courier New">
+	<table height="auto" width="100%" cellpadding="0" cellspacing="10">	
+		<tr height="50px" bgcolor="white">
+
+			<!-- Navigation Links -->
+			<td width="25%" background="">
+				<table height="auto" width="100%" cellpadding="15">
+					<tr>
+						<td width="33%">
+							<font color="#0063FF" size="4">HOME</font></td>
+						<td width="33%">
+							<a href="product.html">
+								<font color="#3F4145" size="4">PRODUCT</font>
+							</a>
+						</td>
+
+						<td width="33%">
+							<a href="contact.html">
+								<font color="#3F4145" size="4">CONTACT US</font>
+							</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+<center>
+	<div id="pays" align="center">
+		<a onclick="myFunction()">
+			<br><br>
+			<br><br>
+			<button class="pays" type="button">Proceed</button>
+			<br><br>
+			<br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br>
+		</a>
+	</div>
+</center>
+
+
+	<center>
+	<a href="product.html">
+		
+		
+		<button class="back" type="button">Back to Products</button>
+	</a>
+	<br><br>
+</center>
+
+<script type="text/javascript">
+	function myFunction() {
+	var price=prompt("Enter Price: ");
+	var quantity;var totalPrice = 0;
+	var txt = prompt("Enter the Game Name:","");
+	var innerHTMLvalue = "<table height='auto' width='100%' cellpadding=0' cellspacing='5'><td width='10%'></td><tr><td width='20%'>Quantity</td><td width='20%'>Price(per unit)</td><td width='30%' bgcolor='#7DCEA0'>Total Price</td><td></td></tr>";
+		
+		alert("Price of the game: " +price);
+		quantity = prompt("No. of Copies Required: ", "");
+		
+		for (var index = 1; index <= quantity ; index++){
+			totalPrice += price;
+		
+		}
+				
+		
+				innerHTMLvalue += "<tr><td>" + quantity+ "</td><td>" +  price + "</td><td bgcolor='#7DCEA0'>Rs" + (price*quantity).toFixed(2) +"</td></tr>";
+				var contentHTML = "<table height='auto' width='100%' cellpadding='0' cellspacing='0'><tr><td colspan='3' align='center'><br><br><font size='5'>BILL</font><hr width='100%' color='95989A'><font>Game Name: "+ txt +"</font></td></tr></table><br><br><font size='3' >" + innerHTMLvalue + "</font>";
+			document.getElementById("pays").innerHTML = contentHTML;	
+			
+				alert("You have Purchased the Game Successfully...")					
+		
+		
+	}
+</script>
+
+
+	<!-- Footer Section -->
+	<table height="auto" width="100%" cellpadding="0" cellspacing="0">
+		<tr height="auto" bgcolor="#252525">
+			<td align="center" >
+				<br><br>
+				<font color="#95989A" size="3">&#169; Stem</font>
+				<br>
+				<font color="#95989A" size="3">Developed and Designed by ABC</font>
+				<br><br>
+			</td>
+		</tr>
+	</table>
+	<!-- END Footer Section -->
+</font>
+</body>
+</html>
